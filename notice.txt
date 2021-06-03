@@ -10,3 +10,4 @@ basic_test5 : basic_test4 에서 버튼 추가, 버튼 클릭 이벤트 생성
 basic_test6 : PyQt5Designer 모듈에 있는 Designer.exe 를 사용하여 작성한 ui 파일을 적용하고, 기능(버튼 클릭 이벤트)을 추가
     Qt Designer 는 터미널에서 designer 를 입력하면 GUI 생성 인터페이스가 실행된다.
 basic_test7 : 시세, 시간을 알아보기(시세를 가져오기 위한 모듈 pykorbit 사용)
+basic_test8 : 신호 발생과 신호 수신

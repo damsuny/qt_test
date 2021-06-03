@@ -11,16 +11,16 @@ class MyWindow(QMainWindow, form_class):
 		super().__init__()
 		self.setupUi(self)
 
-		self.timer = QTimer(self)
-		self.timer.start(1000)
-		self.timer.timeout.connect(self.inquiry)
+		self.timer = QTimer(self)						# 화면 객체 생성
+		self.timer.start(1000)							# 타임인터벌 1초마다 실행
+		self.timer.timeout.connect(self.inquiry)		# inquiry 를 연결
 
 	def inquiry(self):
-		cur_time = QTime.currentTime()
-		str_time = cur_time.toString("hh:mm:ss")
-		self.statusBar().showMessage(str_time)
-		price = pykorbit.get_current_price("BTC")
-		self.lineEdit.setText(str(price))
+		cur_time = QTime.currentTime()					# 현재 시간 객체 생성
+		str_time = cur_time.toString("hh:mm:ss")		# 시간을 문자형(str)으로 변경
+		self.statusBar().showMessage(str_time)			# 시간 보여줌
+		price = pykorbit.get_current_price("BTC")		# 가격 불러옴
+		self.lineEdit.setText(str(price))				# 가격을 lineedit에 표시
 
 app = QApplication(sys.argv)
 
