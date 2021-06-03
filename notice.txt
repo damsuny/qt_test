@@ -1,0 +1,12 @@
+pyQt5을 익히기 위한 실습 프로젝트입니다.
+
+모듈은 PyQt5, pyqt5_tools, pyqt5designer, pykorbit 를 설치했습니다.
+제일 기본적인 실습 basic_test*.py 부터 주석을 적어 시간이 지나도 기억할 수 있도록 작성할 것입니다.
+basic_test1 : 텍스트 출력
+basic_test2 : 버튼 출력
+basic_test3 : 기본 창 출력 (클래스를 작성)
+basic_test4 : basic_test3 의 window 크기 조절, 타이틀 변경, 아이콘 변경
+basic_test5 : basic_test4 에서 버튼 추가, 버튼 클릭 이벤트 생성
+basic_test6 : PyQt5Designer 모듈에 있는 Designer.exe 를 사용하여 작성한 ui 파일을 적용하고, 기능(버튼 클릭 이벤트)을 추가
+    Qt Designer 는 터미널에서 designer 를 입력하면 GUI 생성 인터페이스가 실행된다.
+basic_test7 : 시세, 시간을 알아보기(시세를 가져오기 위한 모듈 pykorbit 사용)
